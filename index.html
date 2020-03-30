@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<!-- 
+    FALTA IMPLANTAR O PHP
+-->
+
+<head>
+    <!--TAG's SEO-->
+    <meta name="description" content="Descrição do site">
+    <meta name="keywords" content="palavras, separadas, por, virgula">
+    <meta name="author" content="Bruno Salmito">
+    <!--TAG Responsivo-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--TAG's diversos-->
+    <meta charset="UTF-8">
+    <!--Links e fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Website</title>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="center">
+            <div class="logo"><i class="fa fa-rocket"></i> Bruno Salmito</div>
+            <!-- 
+                Menu Mobile
+            -->
+            <div class="menuSection">
+                <div class="menuToogle">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Serviços</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <!--
+                Chamada principal do site
+            -->
+            <div class="chamada">
+                <h2>Sistemas próprios<br>Para empresas autênticas</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, enim nesciunt. Aperiam, deserunt
+                    maiores. </p>
+            </div>
+            <!--chamada-->
+            <div class="clear"></div>
+        </div>
+        <!--center-->
+    </header>
+
+    <!-- 
+        Chamada secundária a que contém foto do telefone
+    -->
+    <section class="device">
+        <div class="center">
+            <div class="deviceText">
+                <h2>Desenvolvemos Sistemas Únicos</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Error fugiat, asperiores quaerat
+                    repudiandae quis nemo pariatur illo quas saepe libero et adipisci sequi officiis? Aut quod autem
+                    expedita cum illum?
+                </p>
+                <ul>
+                    <li>Sistemas persinalizados</li>
+                    <li>Aplicativos para celular</li>
+                    <li>Web Sites modernos</li>
+                    <li>Servidores exclusivos</li>
+                </ul>
+                <a href="#">Contato</a>
+            </div>
+            <!--deviceText-->
+            <div class="clear"></div>
+
+            <div class="deviceImg">
+                <img src="img/device.png" alt="Device">
+            </div>
+            <!--deviceImg-->
+            <div class="clear"></div>
+        </div>
+        <!--center-->
+    </section>
+
+    <!-- 
+        Segunda chamada do site contendo foto da dashboar
+    -->
+    <section class="pessoas">
+        <div class="center">
+            <div class="pessoasText">
+                <h2>Desenvolvido por pessoas para pessoas</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, iusto! Ut, voluptatibus unde
+                    mollitia fuga quisquam ducimus itaque vero hic omnis nisi saepe obcaecati? Architecto ipsum quae
+                    delectus illo voluptatibus?
+                </p>
+            </div>
+            <!--pessoasText-->
+            <div class="pessoasDash">
+                <img src="img/dash.png" alt="DashBoard">
+            </div>
+        </div>
+        <!--center-->
+    </section>
+    <!--pessoas-->
+
+
+    <!-- 
+        Sessão que contém depoimentos e um slider da equipe
+    -->
+    <section class="profile">
+        <div class="depoimentos">
+            <h2>Depoimentos</h2>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo sint debitis quis explicabo ipsum et
+                quas architecto, temporibus ipsam nostrum odio esse, iste modi nobis soluta quidem dignissimos illo
+                itaque!
+            </p>
+        </div>
+        <!--depoimentos-->
+
+        <!-- 
+            Falta implantar o slider da equipe 
+        -->
+        <div class="equipe">
+            <h2>Bruno Salmito</h2>
+            <h3>CEO</h3>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores esse quas harum, expedita,
+                quibusdam vitae laborum qui.
+            </p>
+            <div class="fotoEquipe"></div>
+            <div class="clear"></div>
+
+            <div class="arrow">
+                <span class="select"></span>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+        <!--equipe-->
+
+        <div class="clear"></div>
+    </section>
+
+    <!-- 
+        Sessão que contém o formulário de contato e 
+        Google Maps
+    -->
+    <section class="contato">
+        <div class="center">
+            <div class="formContainer">
+                <form method="POST">
+                    <h2>Entre em contato</h2>
+                    <div class="inputContainer">
+                        <label>Nome</label>
+                        <input type="text" required name="nome">
+                    </div>
+                    <!--inputContainer-->
+
+                    <div class="inputContainer">
+                        <label>Email</label>
+                        <input type="email" required name="email">
+                    </div>
+                    <!--inputContainer-->
+
+                    <div class="inputContainer">
+                        <label>Telefone</label>
+                        <input type="text" required name="nome">
+                    </div>
+                    <!--inputContainer-->
+                    <input type="submit" value="Enviar" name="acao">
+                </form>
+            </div>
+            <!--formContainer-->
+            <div class="mapas">
+                <h2>Faça uma visita</h2>
+                <div class="mapa" id="map">
+
+                </div>
+            </div>
+        </div>
+        <!--center-->
+    </section>
+
+    <footer>
+        <h2>Bruno Salmito <strong>@</strong>Todos os direitos reservados</h2>
+    </footer>
+
+    <!-- 
+        Sessão de inclusão dos scripts
+    -->
+    <script src="js/menu.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=SuaKeyDoGoogleMaps"></script>
+    <script src="js/map.js"></script>
+</body>
+
+</html>

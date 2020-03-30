@@ -1,0 +1,645 @@
+/*
+* Arquivo de estilização do site principal
+* Autor: Bruno Salmito
+* Versão: 0.0.1
+*/
+
+/*--------------------------------------------
+    RESET DO NAVEGADOR E BOOT CSS
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    /*1rem = 10px*/
+    font-size: 62.5%;
+}
+
+.clear {
+    clear: both;
+}
+
+.center {
+    max-width: 128.0rem;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--------------------------------------------
+    Header
+*/
+header {
+    width: 100%;
+    height: 90vh;
+    max-height: 766px;
+    background-image: url('../img/capa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header>.center {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 400;
+    padding: 1.2rem 0 1.2rem 2%;
+}
+
+header .menuSection {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 2.0rem;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    color: white;
+}
+
+header .chamada {
+    width: 70%;
+    max-width: 60.0rem;
+    margin-left: auto;
+    margin-top: 20.0rem;
+}
+
+header .chamada h2 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 300;
+}
+
+header .chamada p {
+    margin-top: 1.8rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 400;
+}
+
+/*--------------------------------------------
+    Section device
+*/
+section.device {
+    background-color: #7159c1;
+}
+
+section.device>.center {
+    display: flex;
+    align-items: center;
+}
+
+section.device .deviceText {
+    margin-left: 2.0rem;
+}
+
+section.device .deviceText h2 {
+    color: white;
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 2.0rem;
+}
+
+section.device .deviceText p {
+    font-size: 1.8rem;
+    margin: 1.0rem 0;
+    color: white;
+    font-weight: 300;
+}
+
+section.device .deviceText ul {
+    list-style-position: inside;
+}
+
+section.device .deviceText ul li {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    padding: .8rem 0;
+}
+
+section.device .deviceText a {
+    color: white;
+    display: inline-block;
+    font-size: 1.8rem;
+    width: 14.0rem;
+    height: 3.5rem;
+    background-color: #53418f;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 3.5rem;
+    border-radius: 1.9rem;
+    margin: .8rem 0 0 1.0rem;
+}
+
+section.device .deviceImg {
+    margin-top: -9.5rem;
+}
+
+/*--------------------------------------------
+    Section pessoas
+*/
+section.pessoas>.center {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section.pessoas .pessoasText {
+    margin-top: 1.2rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+section.pessoas .pessoasText h2 {
+    font-size: 3.8rem;
+    font-weight: 700;
+    margin: 1.8rem 0;
+    color: #463c66;
+}
+
+section.pessoas .pessoasText p {
+    max-width: 90.2rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.8rem;
+    color: #463c66;
+}
+
+section.pessoas .pessoasDash {
+    text-align: center;
+    margin: 1.0rem auto;
+    z-index: 2;
+}
+
+section.pessoas .pessoasDash img {
+    max-width: 80.0rem;
+    -webkit-box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 5px 2px rgba(0, 0, 0, 0.75);
+}
+
+/*--------------------------------------------
+    Section profile
+*/
+section.profile {
+    width: 100%;
+    position: relative;
+    top: -12.0rem;
+}
+
+section.profile .depoimentos {
+    float: left;
+    width: 50%;
+    background-color: #7159c1;
+    height: 35.0rem;
+    text-align: right;
+    padding: 2.0rem;
+}
+
+section.profile .depoimentos h2 {
+    font-size: 3.8rem;
+    color: white;
+    margin-top: 10.9rem;
+    font-weight: 400;
+}
+
+section.profile .depoimentos p {
+    float: right;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    max-width: 35.0rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+section.profile .equipe {
+    float: left;
+    width: 50%;
+    height: 40.0rem;
+    text-align: left;
+    padding: 2.0rem;
+}
+
+section.profile .equipe h2 {
+    font-size: 3.8rem;
+    margin-top: 10.9rem;
+    font-weight: 400;
+}
+
+section.profile .equipe p {
+    float: left;
+    font-size: 1.5rem;
+    font-weight: 300;
+    max-width: 40.0rem;
+    text-align: justify;
+    margin-top: 1.5rem;
+}
+
+section.profile .equipe .fotoEquipe {
+    position: relative;
+    left: 27.0rem;
+    top: -7.1rem;
+    width: 6.0rem;
+    height: 6.0rem;
+    border-radius: 50%;
+    background-image: url('../img/bruno.jpg');
+    background-size: contain;
+    background-position: center;
+}
+
+section.profile .equipe .arrow {
+    width: 100%;
+    text-align: left;
+    margin: 2.0rem auto;
+}
+
+section.profile .equipe .arrow span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #6d58b4;
+    margin-right: 1.2rem;
+}
+
+section.profile .equipe .arrow span.select {
+    background-color: #463c66;
+}
+
+/*--------------------------------------------
+    Section contato
+*/
+section.contato {
+    position: relative;
+    top: -13.0rem;
+    height: 40.0rem;
+}
+
+section.contato .formContainer {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+section.contato .formContainer h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+}
+
+section.contato .formContainer form {
+    width: 70%;
+    padding: 2.0rem;
+}
+
+section.contato .formContainer form .inputContainer {
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+section.contato .formContainer form .inputContainer label {
+    display: block;
+    text-align: left;
+    font-size: 1.8rem;
+}
+
+section.contato .formContainer form .inputContainer input {
+    width: 100%;
+    height: 4.0rem;
+    border: 1px solid #53418f;
+    border-radius: .8rem;
+    padding-left: 1.5rem;
+    color: white;
+    outline: none !important;
+    transition-duration: .6s;
+}
+
+section.contato .formContainer form .inputContainer input:focus {
+    background-color: #6953b1c5;
+}
+
+section.contato .formContainer form input[type=submit] {
+    width: 70%;
+    height: 4.0rem;
+    border: none;
+    border-radius: .8rem;
+    background-color: #7159c1;
+    outline: none !important;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+section.contato .formContainer form input[type=submit]:hover {
+    background-color: #53418f;
+}
+
+section.contato .mapas {
+    float: left;
+    width: 50%;
+    height: 35.0rem;
+    text-align: center;
+}
+
+section.contato .mapas .mapa {
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+}
+
+section.contato .mapas h2 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 1.2rem;
+}
+
+/*--------------------------------------------
+    footer
+*/
+footer {
+    width: 100%;
+    background-color: #7159c1;
+    height: 4.0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-top: -100px;
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: white;
+}
+
+/*--------------------------------------------
+    Responsivo 1.260px
+*/
+@media screen and (max-width: 1260px) {
+    html {
+        font-size: 56.2%;
+    }
+
+    section.device .deviceImg img {
+        max-width: 60.0rem;
+
+    }
+
+}
+
+/*--------------------------------------------
+    Responsivo 1.024px
+*/
+@media screen and (max-width: 1024px) {
+    html {
+        font-size: 54.2%;
+    }
+
+    section.device .deviceText {
+        margin-left: 1.0rem;
+    }
+
+    section.device .deviceText h2 {
+        font-size: 2.4rem;
+    }
+
+}
+
+/*--------------------------------------------
+    Responsivo 900px
+*/
+@media screnn and (max-widht: 900px) {
+    html {
+        font-size: 50.2%;
+    }
+
+    section.device .deviceImg img {
+        max-width: 40.0rem;
+    }
+
+    section.device .deviceText {
+        margin-left: .7rem;
+    }
+
+    section.device .deviceText h2 {
+        color: white;
+        font-size: 2.4rem;
+    }
+
+    section.device .deviceText p {
+        font-size: 1.5rem;
+        margin: 1.0rem 0;
+    }
+}
+
+/*--------------------------------------------
+    Responsivo 850px
+*/
+@media screen and (max-width:850px) {
+    section.device .deviceText p {
+        display: none;
+    }
+}
+
+/*--------------------------------------------
+    Responsivo 768px
+*/
+@media screen and (max-width:768px) {
+
+    /* Menu Mobile */
+    header .menuToogle {
+        cursor: pointer;
+        z-index: 3;
+        position: relative;
+    }
+
+    header .line {
+        width: 40px;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px 0;
+        transition: all 1s ease;
+    }
+
+    header nav {
+        position: fixed;
+        background-color: #7159c1;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        text-align: center;
+        left: 0;
+        z-index: 1;
+        clip-path: circle(10.0rem at 100% -30%);
+        -webkit-clip-path: circle(10.0rem at 100% -15%);
+        -moz-clip-path: circle(10.0rem at 100% -15%);
+        -o-clip-path: circle(10.0rem at 100% -15%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    header nav li {
+        width: 100%;
+        margin-top: 8.0rem;
+        cursor: pointer;
+    }
+
+    header nav.open {
+        clip-path: circle(10.0rem at 100% -15%);
+        -webkit-clip-path: circle(110.0rem at 100% 10%);
+        -moz-clip-path: circle(110.0rem at 100% 10%);
+        -o-clip-path: circle(110.0rem at 100% 10%);
+        pointer-events: all;
+    }
+
+    header .menuSection.on .line:nth-child(1) {
+        transform: rotate(45deg) translate(7px, 7px);
+    }
+
+    header .menuSection.on .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    header .menuSection.on .line:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px);
+    }
+
+    header nav li {
+        opacity: 0;
+    }
+
+    header nav.open li:nth-child(1) {
+        transition: all 0.5s ease .3s;
+    }
+
+    header nav.open li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    header nav.open li:nth-child(3) {
+        transition: all 0.5s ease 0.5s;
+    }
+
+    header nav.open li:nth-child(4) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    header nav.open li {
+        opacity: 1;
+        padding: 1.5rem 0;
+    }
+
+    header nav.open li:hover {
+        background-color: #53418f;
+        transition: none;
+    }
+
+    /* chamada principal */
+    header .chamada {
+        max-width: 60.0rem;
+        margin-left: auto;
+        margin-top: 18.0rem;
+    }
+
+    /* section device */
+    section.device>.center {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section.device .deviceText p {
+        display: block;
+    }
+
+    section.device .deviceText a {
+        margin: .8rem 1.0rem;
+    }
+
+    section.device .deviceImg {
+        display: none;
+    }
+
+    /* Section pessoas */
+    section.pessoas .pessoasDash img {
+        max-width: 59rem;
+    }
+
+    /* section profile */
+    section.profile .depoimentos {
+        float: none;
+        width: 100%;
+        height: 35.0rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    section.profile .depoimentos p {
+        float: none;
+        max-width: none;
+        font-weight: 300;
+    }
+
+    section.profile .equipe {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    section.profile .equipe p {
+        float: none;
+        max-width: none;
+    }
+
+    section.profile .equipe .fotoEquipe {
+        position: relative;
+        left: 35rem;
+        top: -24.1rem;
+        width: 12.0rem;
+        height: 12.0rem;
+    }
+
+    section.profile .equipe .arrow {
+        text-align: center;
+        margin: -10rem auto;
+    }
+
+    section.profile .equipe .arrow span {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        cursor: pointer;
+        background-color: #6d58b4;
+        margin-right: 1.2rem;
+    }
+}
